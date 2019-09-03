@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:300,400,700&display=swap');
+
+/* style reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*overall styles */
+body {
+  line-height: 1.5;
+  color: black;
+}
+
+body {
+  line-height: 1.5;
+}
+
+body,
+html,
+header {
+  height: 100%;
+
+}
+
+/* mobile styles */
+h1 {
+  font-size: 3rem;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.728rem;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-weight: bold;
+
+}
+
+.heading h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 1.44rem;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0rem 2.31rem 0rem 2.31rem;
+}
+
+
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.heading h2 {
+  margin: -.5rem 0 1rem 0;
+}
+
+/*header banner */
+.homepage {
+  background-attachment: fixed;
+  background-image: url(./imgs/asto-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, .2);
+  height: 100%;
+}
+
+.intro h2:nth-of-type(2),
+.work h2:nth-of-type(2) {
+  margin-bottom: 1.5rem;
+  margin-top: -.5rem;
+}
+
+.intro,
+.work {
+  margin-bottom: 1rem;
+}
+
+.welcome,
+.projects {
+  margin-bottom: 3rem;
+}
+
+.intro h2:nth-of-type(1) {
+  font-weight: 300;
+}
+
+.work h2:nth-of-type(1) {
+  font-weight: 300;
+}
+
+/* images */
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.3);
+  align-self: center;
+}
+
+/* logo */
+.logo {
+  text-align: center;
+  padding-top: 25px;
+
+}
+
+.logo h4 {
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-size: 1.8125rem;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.logo h4:nth-of-type(2) {
+  margin-left: -.25rem;
+  font-weight: 300;
+}
+
+/*image hover effects */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(34, 25, 89, .8);
+  border-radius: 10px;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  height: 100%;
+}
+
+
+
+.gallery img {
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+.text {
+  color: white;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 250px;
+
+}
+
+.text p {
+  display: none;
+}
+
+/* image pop-ups */
+.big .overlay {
+  background-color: rgba(34, 25, 89, 0);
+  opacity: 1;
+  border-radius: 0px;
+}
+
+.box.modal.big img {
+  border-radius: 0px;
+}
+
+.modal.big {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.big .text p {
+  display: inline;
+}
+
+.big .text h3 {
+  margin-bottom: 1rem;
+}
+
+.modal img {
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+}
+
+.modal.big img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 90%;
+}
+
+.big .text {
+  top: 75%;
+
+}
+
+
+
+.size.big img {
+  width: 70%;
+}
+
+
+
+.gallery .box:nth-of-type(7) img,
+.gallery .box:nth-of-type(1) img {
+  object-position: 0% 0%;
+}
+
+.modal:nth-of-type(7).big img {
+
+
+  width: 80%;
+  height: auto;
+}
+
+/*footer */
+
+footer {
+  background-color: #F3F3F3;
+  height: 430px;
+  position: relative;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+
+
+}
+
+.footer p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+.footer img {
+  width: 25%;
+  border-radius: 0px;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.0);
+  padding: .5rem;
+}
+
+.footer h4 {
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer h4:nth-of-type(2) {
+  margin-left: -.25rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width:600px) {
+  h1 {
+
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  .heading h2 {
+    font-size: 3.21rem;
+    margin-top: -1.5rem;
+  }
+
+  .container {
+    margin: 0 3rem 5rem 3rem;
+  }
+
+  .welcome {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-gap: 10%;
+    height: 550px;
+  }
+
+
+  .intro {
+    align-self: center;
+  }
+
+  /*gallery*/
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 250px;
+
+  }
+
+  .overlay {
+    height: 250px;
+  }
+
+  .big .overlay {
+    height: 100%;
+  }
+
+  .footer img {
+    width: 50px;
+  }
+
+
+  .size.big img {
+    width: 50%;
+  }
+
+  .lg.big img {
+    top: 40%;
+
+  }
+
+  .modal:nth-of-type(7).big img {
+    width: 60%;
+  }
+}
+
+
+@media screen and (min-width:900px) {
+  .homepage {
+    background-attachment: fixed;
+    background-image: url(./imgs/nebula.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+  }
+
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bg {
+    background-color: rgba(0, 0, 0, 0.2);
+
+  }
+
+  .modal:nth-of-type(7).big img {
+    width: 70%;
+  }
+
+  .size.big img {
+    height: 70%;
+    width: auto;
+  }
+
+
+  .big .text {
+    top: 80%;
+
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  body p {
+    line-height: 2;
+  }
+
+  .container {
+
+    max-width: 1132px;
+  }
+
+
+
+  h2 {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+
+
+
+  .heading p {
+    width: 470px;
+  }
+
+  /*parralax effect */
+
+  #parallax {
+    display: block;
+    height: 1000px;
+    margin-bottom: 10rem;
+  }
+
+  #parallax div {
+    position: fixed;
+    top: 0;
+    background-position: center;
+    transform: translateY(0px);
+    height: 1000px;
+    width: 100%;
+  }
+
+
+
+
+
+  main {
+    position: relative;
+    background-color: white
+  }
+
+
+
+
+
+
+
+  .bg {
+    background-attachment: fixed;
+    background-image: url(./imgs/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+  }
+
+
+
+  .welcome {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-gap: 10%;
+    height: 550px;
+  }
+
+
+
+
+  .intro {
+    align-self: center;
+
+  }
+
+  .work {
+    position: sticky;
+    height: 100px;
+    top: 50%;
+  }
+
+
+
+  .work h2:nth-of-type(2),
+  .intro h2:nth-of-type(2) {
+    margin-top: -1rem;
+  }
+
+  .intro h2:nth-of-type(2) {
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 25% 66%;
+    grid-gap: 9%;
+    margin-bottom: 6.5625rem;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .gallery {
+    grid-area: 1/2/-1/-1;
+  }
+
+  /* image overlay  borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade*/
+
+
+  .modal:nth-of-type(7).big img {
+    width: 40%;
+  }
+
+  .modal.big img {
+    width: 60%;
+    height: auto;
+  }
+
+  .size.big img {
+    height: 60%;
+    width: auto;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .heading h2 {
+    font-size: 4.5rem;
+    margin-top: -2.5rem;
+
+  }
+
+  .wide.big img {
+    width: 90%;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .modal:nth-of-type(7).big img {
+    height: 70%;
+    width: auto;
+  }
+
+}
